@@ -1,0 +1,149 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Manrope", sans-serif;
+}
+
+#container {
+  width: 42.8rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3.7rem 2.6rem;
+  background-color: var(--backgrond);
+  border: 1px solid #29292E;
+}
+
+.open-menu, .close-menu {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+.main-text {
+  width: 100%;
+  max-height: 80rem;
+  padding: 8.5rem 2.8rem;
+  background: var(--backgrond);
+  background-image: url(/assets/blur-mobile.png);
+  background-size: cover;
+  background-position: bottom;
+  
+}
+
+.main-text h1 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.main-text button {
+  border: 0;
+  background: transparent;
+  border: 1px solid #8257E5;
+  border-radius: .6rem;
+  padding: 1rem 3rem;
+  margin: 8.8rem 10.2rem;
+  transition: background 400ms;
+}
+
+.main-text button:hover {
+  background: #8257E5;
+}
+
+.main-text button span {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.coffee {
+  text-align: center;
+}
+
+.coffee h2 {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6.8rem;
+  letter-spacing: -0.03em;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+}
+
+.coffee::after {
+  content: "<Great Code/>";
+  color: rgba(130, 87, 229, 1);
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6.8rem;
+
+  letter-spacing: -0.03em;
+
+  border: .2rem solid #8257E5;
+  text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+}
+
+.rocket-coffee .img-coffee {
+  width: 100%;
+  margin-top: 2.6rem;
+}
+
+/* LINKS */
+
+.hide {
+  display: none;
+}
+
+.container-links {
+  width: 42.8rem;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  background: #000;
+}
+
+.links {
+  padding: 1.7rem;
+  border-bottom: 1px solid #29292E;
+}
+
+.links a {
+  text-decoration: none;
+  color: #A8A8B3;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.links:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+  border-left: 5px solid #8257E6;
+}
+

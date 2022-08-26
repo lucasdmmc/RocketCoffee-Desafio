@@ -22,14 +22,13 @@ body {
 #container {
   width: 42.8rem;
   margin: 0 auto;
-  position: relative;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 3.7rem 2.6rem;
-  background-color: var(--backgrond);
+  background: var(--backgrond);
   border: 1px solid #29292E;
 }
 
@@ -67,6 +66,7 @@ header {
   padding: 1rem 3rem;
   margin: 8.8rem 10.2rem;
   transition: background 400ms;
+  cursor: pointer;
 }
 
 .main-text button:hover {
@@ -147,3 +147,100 @@ header {
   border-left: 5px solid #8257E6;
 }
 
+@media (min-width: 428px) {
+  #container-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  #container, #container header {
+    display: none;
+  }
+
+  div#container-desktop {
+    display:inherit;
+    width: 100%;
+    height: 100vh;
+    background: var(--backgrond);
+    background-image: url(/assets/blur-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+  }
+
+  div#container-desktop .nav {
+    width: 65%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div#container-desktop .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+  }
+
+  div#container-desktop .nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+
+  div#container-desktop .nav-links a:hover {
+    color: rgb(226, 218, 218);
+  }
+
+  div#container-desktop button {
+    border: 0;
+    background: transparent;
+    border: 1px solid #8257E5;
+    border-radius: .6rem;
+    padding: 1rem 3rem;
+    transition: background 400ms;
+    cursor: pointer;
+    color: white;
+  }
+
+  div#container-desktop button:hover {
+    background: #8257E5;
+  }
+
+  section {
+    text-align: center;
+    margin-top: -1rem;
+  }
+
+  section h1 {
+    font-size: 5rem;
+    line-height: 6.8rem;
+    letter-spacing: -0.03em;
+  
+    color: #FFFFFF;
+  
+    text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+  }
+
+  section::after{
+    content: "<Great Code/>";
+    color: rgba(130, 87, 229, 1);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 6.8rem;
+  
+    letter-spacing: -0.03em;
+  
+    border: .2rem solid #8257E5;
+    text-shadow: 0px .4rem .4rem rgba(0, 0, 0, 0.25);
+  }
+
+  .img {
+    text-align: center;
+  }
+}
